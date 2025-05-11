@@ -105,14 +105,15 @@ We would like to thank the following repositories for their valuable contributio
 
 If you find our work useful, please consider citing our paper:
 ```bibtex
-@inproceedings{author2025textcengen,
-  title={TextCenGen: Attention-Guided Text-Centric Background Adaptation for Text-to-Image Generation},
-  author={Tianyi Liang and Jiangqi Liu and Yifei Huang and Shiqi Jiang and Sicheng Song and Jianshen Shi and Changbo Wang and Chenhui Li},
-  booktitle={International Conference on Machine Learning (ICML)},
-  year={2025}
+@inproceedings{liang2025textcengen,
+  title     = {TextCenGen: Attention-Guided Text-Centric Background Adaptation for Text-to-Image Generation},
+  author    = {Liang, Tianyi and Liu, Jiangqi and Huang, Yifei and Jiang, Shiqi and Shi, Jianshen and Wang, Changbo and Li, Chenhui},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2025}
 }
 ```
 For any question, please feel free to contact us via email: [tyliang@stu.ecnu.edu.cn](mailto:tyliang@stu.ecnu.edu.cn) and [chli@cs.ecnu.edu.cn](mailto:chli@cs.ecnu.edu.cn)
+
 
 
 
