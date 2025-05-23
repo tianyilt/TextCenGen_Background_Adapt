@@ -2,11 +2,13 @@
   
 # TextCenGen: Attention-Guided Text-Centric Background Adaptation for Text-to-Image Generation
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2404.11824) [![Conference](https://img.shields.io/badge/ICML-2025-blue)](https://icml.cc/Conferences/2025)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[Project Page](https://project-page-url.com)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2404.11824) [![Conference](https://img.shields.io/badge/ICML-2025-blue)](https://icml.cc/Conferences/2025) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://tianyilt.github.io/textcengen/)
 
 </div>
+
+
+[Tianyi Liang](https://tianyilt.github.io/)<sup>†</sup>, Jiangqi Liu<sup>†</sup>, Yifei Huang, Shiqi Jiang, Jianshen Shi, Changbo Wang, [Chenhui Li](https://chenhui.li/)<sup>*</sup>
+
 
 TextCenGen introduces a dynamic adaptation of the blank region for text-friendly image generation, and enhances T2I model outcomes on arbitrary prompt, catering to varied text positions.
 <img src='assets/teaser_mobile.png'>
