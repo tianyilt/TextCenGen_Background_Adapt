@@ -22,9 +22,9 @@ TextCenGen introduces a dynamic adaptation of the blank region for text-friendly
 
 
 ## Roadmap
-- [ ] 📱 Support for arbitrary resolution mobile devices
-- [ ] 🤗 Add Hugging Face Space integration
-- [ ] 🚀 Extend to mmDiT architecture models like Flux and other generative models
+- [ ] 📱 Support for arbitrary resolution for mobile devices.
+- [ ] 🤗 Add Hugging Face Space integration.
+- [ ] 🚀 Extend to mmDiT architecture models like Flux and other generative models.
 - [ ] 📱 A quick start guide.
 
 ## Demos
