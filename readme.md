@@ -15,9 +15,17 @@ TextCenGen introduces a dynamic adaptation of the blank region for text-friendly
 
 
 
-## Release
+## News
+- [2025/06/07] [<img src="assets/Xiaohongshu.png" width="30" height="14">](https://www.xiaohongshu.com/discovery/item/684127ed000000002102f896?source=webshare&xhsshare=pc_web&xsec_token=LBgS2nleC0KA7GV62NdPJDX5WbIkrFUfcHBmd03lhFm5E=&xsec_source=pc_share) Our article on Xiaohongshu is going viral! Thank you all for your attention. We will continue to update according to our roadmap. [查看文章](https://www.xiaohongshu.com/discovery/item/684127ed000000002102f896?source=webshare&xhsshare=pc_web&xsec_token=LBgS2nleC0KA7GV62NdPJDX5WbIkrFUfcHBmd03lhFm5E=&xsec_source=pc_share)
 - [2025/05/07] 🔥 We release the code and dataset.
 - [2025/05/01] 🔥 We achieve ICML 2025 Poster Paper.
+
+
+## Roadmap
+- [ ] 📱 Support for arbitrary resolution mobile devices
+- [ ] 🤗 Add Hugging Face Space integration
+- [ ] 🚀 Extend to mmDiT architecture models like Flux and other generative models
+- [ ] 📱 A quick start guide.
 
 ## Demos
 
