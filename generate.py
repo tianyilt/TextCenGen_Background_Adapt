@@ -51,29 +51,30 @@ parser.add_argument('--num_inference_steps', type=int, default=50, help='The num
 parser.add_argument('--height', type=int, default=512, help='The height for pipe')
 parser.add_argument('--width', type=int, default=512, help='The width for pipe')
 
-parser.add_argument('--move_factor', type=float, default=1, help='The proportion of repulsive movement')
+parser.add_argument('--move_factor', type=float, default=2, help='The proportion of repulsive movement')
 parser.add_argument('--threshold', type=float, default=0.5, help='Threshold for soft thresholding attention maps')
 parser.add_argument('--sharpness', type=float, default=1, help='Sharpness parameter for soft thresholding')
 parser.add_argument('--region_exclusion', type=float, default=0.75, help='Region exclusion strength')
 parser.add_argument('--theta', type=float, default=0.25, help='Conflict detection threshold')
 parser.add_argument('--repulsive_force', type=float, default=14)
 parser.add_argument('--margin_force', type=float, default=0.4)
+parser.add_argument('--path', type=str, default="./")
 
 
-parser.add_argument('--prompt', type=str, default="Photo of a fruit made of feathers with a bee on it.")
+parser.add_argument('--prompt', type=str, default="Photo of a cow seating in the forest.")
 parser.add_argument('--position', type=str, default="left")
 
 
 args = parser.parse_args()
-model_id = "runwayml/stable-diffusion-v1-5"
+model_id = "/data/.cache/huggingface/hub/stable-diffusion-v1-5"
 frames = [
-	Frame(7, 22, 15, 42, 64),
-	Frame(49, 22, 57, 50, 64),
+	Frame(6, 22, 14, 42, 64),
+	Frame(49, 22, 57, 42, 64),
 	Frame(22, 7, 42, 15, 64),
 	Frame(22, 49, 42, 57, 64),
-	Frame(28, 22, 48, 30, 64)
+	Frame(22, 28, 42, 36, 64)
 ]
-positionToFrames={'up':frames[4],'down':frames[1],'left':frames[2],'right':frames[0],'middle':frames[3]}
+positionToFrames={'up':frames[0],'down':frames[1],'left':frames[2],'right':frames[3],'middle':frames[4]}
 
 device="cuda"
 
@@ -97,7 +98,7 @@ frame=frames[0]
 if args.position in positionToFrames:
     frame=positionToFrames[args.position]
 region=fill_tensor(frame.x, frame.y, frame.a, frame.b, frame.deep_h, frame.deep_w).to(device)
-init_model(pipe,prompt,guidance_func,region)
+# init_model(pipe,prompt,guidance_func,region)
 image = pipe(prompt, height=args.height, width=args.width,
                     num_inference_steps=args.num_inference_steps, generator=generator,
                     negative_prompt=negative_prompt).images[0]
@@ -117,6 +118,7 @@ with open(folder_path + '/data.json', 'w') as file:
     json.dump(data_to_save, file, indent=4)
 left_top = (frame.y * 8, frame.x * 8)
 right_bottom = (frame.b * 8, frame.a * 8)
+print(folder_path)
 save_images([image], folder=folder_path, input_params=input_params,
                     titles=['edited'],left_top=left_top,
                 right_bottom=right_bottom,save_with_draw_frame=True,save_combined=False)

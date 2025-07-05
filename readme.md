@@ -86,7 +86,7 @@ huggingface-cli download stabilityai/stable-diffusion-xl-base-1.0 -resume-downlo
 
 Evaluate using Stable Diffusion 1.5:
 ```bash
-python generate.py --prompt "Photo of a fruit made of feathers with a bee on it." --frame "left"
+python generate.py --prompt "Photo of a fruit made of feathers with a bee on it." --position "left"
 ```
 
 ## Evaluation

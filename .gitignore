@@ -64,3 +64,4 @@ venv.bak/
 
 # Project specific
 utils/__pycache__/__init__.cpython-310.pyc
+output
