@@ -7,7 +7,7 @@
 </div>
 
 
-[Tianyi Liang](https://tianyilt.github.io/)<sup>†</sup>, Jiangqi Liu<sup>†</sup>, Yifei Huang, Shiqi Jiang, Jianshen Shi, Changbo Wang, [Chenhui Li](https://chenhui.li/)<sup>*</sup>
+[Tianyi Liang](https://tianyilt.github.io/)<sup>†</sup>, Jiangqi Liu<sup>†</sup>, Yifei Huang, Shiqi Jiang, Jianshen Shi, Changbo Wang, [Chenhui Li](http://chenhui.li/)<sup>*</sup>
 
 
 TextCenGen introduces a dynamic adaptation of the blank region for text-friendly image generation, and enhances T2I model outcomes on arbitrary prompt, catering to varied text positions.
